@@ -1,6 +1,5 @@
 public class GuessGame {
-    static final int MAX_NUMBER = 15;
-
+    
     Jugadores jugador1;
     Jugadores jugador2;
     Jugadores jugador3;
@@ -15,8 +14,8 @@ public class GuessGame {
         jugador4 = new Jugadores();
         jugador5 = new Jugadores();
 
-        int targetNumber = (int) (Math.random() * (MAX_NUMBER + 1));
-        System.out.println("Estoy pensando en un numero entre 0 y " + MAX_NUMBER + "...");
+        int targetNumber = (int) (Math.random() * 16);
+        System.out.println("Estoy pensando en un numero entre 0 y 15...");
         
         boolean ganador = false;
 
